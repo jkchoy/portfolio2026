@@ -848,7 +848,7 @@ body>* {
 .hero-portfolio {
   display: grid;
   grid-template-columns: 1em repeat(12, 1fr) 1em;
-  grid-template-rows: repeat(8, 100px);
+  grid-template-rows: repeat(7, 100px);
 }
 
 .hero-main-content {
@@ -2017,10 +2017,12 @@ section:has(.observe-me) {
 
 #gallery {
   position: relative;
-  width: 100%;
-  max-width: 1000px;
+  width: 350px;
+  height: 700px;
+  /* max-width: 1000px; */
   aspect-ratio: 1000/700;
   overflow: hidden;
+  border: 1px solid red;
 }
 
 .image-compare {
@@ -2068,7 +2070,7 @@ section:has(.observe-me) {
   left: 50%;
   width: 30px;
   height: 100%;
-  background: var(--color-gold-GM);
+  background: #FEE3A1;
   cursor: pointer;
   z-index: 2;
 }
@@ -2081,10 +2083,11 @@ section:has(.observe-me) {
 
 .caption {
   display: none;
-  background: #68B3AF;
+  background: var(--color-gold-GM);
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 4px;
   font-size: 1.1em;
+  color: var(--color-white);
 }
 
 .caption.active {
@@ -2099,18 +2102,18 @@ section:has(.observe-me) {
 }
 
 .newPic {
-  background: #68B3AF;
-  border: 2px solid #fff;
-  border-radius: 25px;
+  background: #FEE3A1;
+  border: 2px solid #043170;
+  border-radius: 4px;
   padding: 6px 18px;
   margin: 5px;
   cursor: pointer;
   font-size: 1.1em;
-  color: white;
+  color: 043170;
 }
 
 .newPic:hover {
-  background: #518a8c;
+  background: #BEC1D8;
 }
 
 @media (max-width:600px) {
