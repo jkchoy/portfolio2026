@@ -670,7 +670,7 @@ section {
 
 .hero {
   background-color: var(--color-hero-background);
-  padding-block: var(--unit-3xl);
+  padding-block: var(--unit-xl);
   padding-inline: var(--unit-s);
 }
 
@@ -1717,7 +1717,7 @@ section:has(.observe-me) {
 
 
   .hero-subpage-title {
-    font-size: 5em;
+    font-size: 4em;
     /* display: inline; */
     color: var(--color-blue-GM);
     text-transform: uppercase;
@@ -1788,7 +1788,7 @@ section:has(.observe-me) {
 .gold-box {
   background-color: var(--color-gold-GM);
   grid-column: 1 / 13;
-  grid-row: 9 / 10;
+  grid-row: 8 / 9;
 }
 
 
@@ -1799,7 +1799,7 @@ section:has(.observe-me) {
   .hero-subpage {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 50px);
+    grid-template-rows: repeat(11, 50px);
   }
 
   .hero-subpage-images {
@@ -1957,7 +1957,7 @@ section:has(.observe-me) {
 
 /* MOBILE GM  */
 @media (width <=768px) {
-  margin-bottom: var(--unit-m);
+  /* margin-bottom: var(--unit-m); */
 
   .box-layout-GM {
     display: grid;
@@ -2018,11 +2018,11 @@ section:has(.observe-me) {
 #gallery {
   position: relative;
   width: 350px;
-  height: 700px;
+  height: 750px;
   /* max-width: 1000px; */
   aspect-ratio: 1000/700;
   overflow: hidden;
-  border: 1px solid red;
+  border: .5px solid var(--color-blue-GM);
 }
 
 .image-compare {
@@ -2068,11 +2068,13 @@ section:has(.observe-me) {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 30px;
+  width: 10px;
   height: 100%;
   background: #FEE3A1;
   cursor: pointer;
   z-index: 2;
+  transform: translateX(-50%);
+
 }
 
 .caption-container {
@@ -2083,11 +2085,11 @@ section:has(.observe-me) {
 
 .caption {
   display: none;
-  background: var(--color-gold-GM);
-  padding: 10px;
-  border-radius: 4px;
+  /* background: var(--color-gold-GM);
+  padding: 10px; */
+  /* border-radius: 4px; */
   font-size: 1.1em;
-  color: var(--color-white);
+  color: var(--color-blue-GM);
 }
 
 .caption.active {
@@ -2125,4 +2127,22 @@ section:has(.observe-me) {
   #dragger {
     width: 25px;
   }
+}
+
+.text.section-wireframes {
+  background-color: var(--color-gold-GM);
+  color: var(--color-white);
+  /* padding: 2em; */
+  /* margin-left: -90px;
+  margin-top: -23px; */
+  padding: 2em;
+
+  /* padding-left: 90px; */
+
+}
+
+
+.icons {
+  color: var(--color-gold-GM);
+
 }
