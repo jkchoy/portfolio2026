@@ -2357,7 +2357,7 @@ section:has(.observe-me) {
 .box-layout-GM {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(12, 70px);
+  grid-template-rows: repeat(11, 70px);
 }
 
 .box-layout-GM-2 {
@@ -2365,21 +2365,22 @@ section:has(.observe-me) {
   .div-1 {
     grid-column: 1 / 4;
     grid-row: 1 / 4;
-    border: 1px solid red;
+    padding-right: 2em;
+    /* border: 1px solid red; */
   }
 
   .div-2 {
     grid-column: 1 / 4;
     grid-row: 5 / 8;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin-right: 3em;
   }
 
   .div-3 {
     grid-column: 1 / 4;
-    grid-row: 9 / 12;
-    border: 1px solid blue;
-    margin-right: 3em;
+    grid-row: 8 / 12;
+    /* border: 1px solid blue; */
+    margin-right: 1em;
 
   }
 
@@ -2418,4 +2419,15 @@ section:has(.observe-me) {
   padding: 2em;
   /* padding-left: 90px; */
 
+}
+
+.book-titles {
+  color: var(--color-salmon-book);
+  font-weight: bold;
+}
+
+.button.book {
+  background-color: var(--color-salmon-book);
+  color: var(--color-white);
+  text-transform: uppercase;
 }
