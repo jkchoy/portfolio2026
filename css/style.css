@@ -87,7 +87,8 @@ TABLE OF CONTENTS
   --color-dkbrown: #6a3a06;
 
   --color-orange: #ff7f50;
-  --color-juice: #ffae00;
+  --color-juice: #ffa200;
+  --color-fresh: #fa3f3f;
 
   --color-blue-100: #dbeafe;
   --color-blue-400: #3b82f6;
@@ -2955,7 +2956,7 @@ section:has(.observe-me) {
 }
 
 
-/* FANCY FRESH */
+/* FANCY FRESH FOOD SHOP */
 
 
 .site-main.subpage {
@@ -2986,7 +2987,7 @@ section:has(.observe-me) {
   .hero-subpage-title {
     font-size: 4em;
     /* display: inline; */
-    color: var(--color-orange);
+    color: var(--color-fresh);
     text-transform: uppercase;
     letter-spacing: 8px;
     text-align: center;
@@ -3026,7 +3027,7 @@ section:has(.observe-me) {
   text-align: center;
   padding: 15px 10px 5px;
   text-transform: uppercase;
-  background-color: var(--color-orange);
+  background-color: var(--color-fresh);
   color: var(--color-white);
   letter-spacing: 2px;
   display: inline;
@@ -3038,7 +3039,7 @@ section:has(.observe-me) {
   line-height: 1.6;
   padding: 2em;
   grid-column: 8 / 13;
-  grid-row: 4 / 8;
+  grid-row: 5 / 8;
   z-index: 60;
 
   /* border: 1px solid purple; */
@@ -3047,25 +3048,25 @@ section:has(.observe-me) {
 
 .hero-subpage-images {
   grid-column: 2 / 12;
-  grid-row: 5 / 11;
+  grid-row: 6 / 11;
   z-index: 50;
   /* border: 1px solid purple; */
 }
 
 .juice-box {
-  background-color: var(--color-orange);
+  background-color: var(--color-fresh);
   grid-column: 1 / 13;
   grid-row: 8 / 9;
 }
 
 
 .subpage-GM.juice {
-  color: var(--color-juice);
+  color: var(--color-fresh);
   text-transform: uppercase;
 }
 
 .scope-color.juice {
-  color: var(--color-orange);
+  color: var(--color-juice);
   line-height: 1.6;
   /* border: 1px solid orange; */
 }
@@ -3146,27 +3147,33 @@ section:has(.observe-me) {
 
 }
 
+.juice-finalist {
+  color: var(--color-orange);
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
-/* MOBILE SALZBURG  */
+
+/* MOBILE FANCY FRESH FOOD SHOP  */
 
 /* SUB HEADER */
 @media (width <=768px) {
 
-  .hero-subpage.salzburg {
+  .hero-subpage.juice {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(11, 50px);
     padding-bottom: 1em;
   }
 
-  .hero-subpage-images.salzburg {
+  .hero-subpage-images.juice {
     grid-column: 1 / 13;
     grid-row: 2 / 6;
     z-index: 50;
     /* border: 1px solid purple; */
   }
 
-  .hero-subpage-content.salzburg {
+  .hero-subpage-content.juice {
     grid-column: 1 / 13;
     grid-row: 2 / 4;
     z-index: 60;
@@ -3174,18 +3181,16 @@ section:has(.observe-me) {
     /* border: 1px solid green; */
 
 
-    .hero-subpage-title.salzburg {
+    .hero-subpage-title.juice {
       font-size: 2.2em;
       color: var(--color-white);
       text-transform: uppercase;
       letter-spacing: 3px;
-
       text-align: center;
-      display: none;
       /* margin-top: 1.5em; */
     }
 
-    .hero-sub-eyebrow.salzburg {
+    .hero-sub-eyebrow.juice {
       /* text-align: center; */
       margin-right: 0px;
       text-transform: capitalize;
@@ -3196,7 +3201,7 @@ section:has(.observe-me) {
     }
   }
 
-  .case-study.salzburg {
+  .case-study.juice {
     grid-column: 1 /8;
     font-size: 1em;
     margin-top: 0;
@@ -3210,7 +3215,7 @@ section:has(.observe-me) {
   }
 
 
-  .hero-subpage-text.salzburg {
+  .hero-subpage-text.juice {
     /* background-color: var(--color-white); */
     display: flex;
     justify-content: flex-end;
@@ -3234,17 +3239,17 @@ section:has(.observe-me) {
 
   /* margin-bottom: var(--unit-m); */
 
-  .box-layout-GM.salzburg {
+  .box-layout-GM.juice {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(35, 30px);
   }
 
-  .subpage-GM.salzburg {
+  .subpage-GM.juice {
     margin-bottom: .2em;
   }
 
-  .box-layout-GM-1.salzburg {
+  .box-layout-GM-1.juice {
 
     .div-1 {
       grid-column: 1 / 13;
@@ -3304,16 +3309,11 @@ section:has(.observe-me) {
     }
   }
 
-  .one-third.column.salzburg {
+  .one-third.column.juice {
     margin-bottom: var(--unit-2xl);
   }
 }
 
-.salburg-finalist {
-  color: var(--color-chocolate);
-  font-weight: bold;
-  text-transform: uppercase;
-}
 
 .option {
   color: var(--color-grey-300);
